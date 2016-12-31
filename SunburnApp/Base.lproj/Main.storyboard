@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SunburnApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,96 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skin Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYf-ol-hUB">
+                                <rect key="frame" x="88" y="23" width="88" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxy-dq-eWN">
+                                <rect key="frame" x="20" y="20" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ZEq-nE-fuk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <state key="normal" title="change">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeSkinClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGa-m3-lgw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7N-EC-X8J">
+                                <rect key="frame" x="30" y="30" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="bj1-CE-cbc">
+                                <rect key="frame" x="66" y="597" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting data.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2be-Bo-q3v">
+                                <rect key="frame" x="96" y="597" width="263" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes to sunburn: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UA8-IQ-IkW">
+                                <rect key="frame" x="118.5" y="220" width="139" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMa-hW-VDZ">
+                                <rect key="frame" x="135" y="267.5" width="105" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCK-m8-rEg">
+                                <rect key="frame" x="118" y="395" width="139" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <state key="normal" title="set reminder">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="remindMeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1Y-bf-rdN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.016865638868343164" green="0.016784162352070975" blue="0.016947115384615352" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kxy-dq-eWN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5Uk-8P-9Nr"/>
+                            <constraint firstItem="wCK-m8-rEg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8A6-Qi-fim"/>
+                            <constraint firstItem="UMa-hW-VDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Cp-2W-UR6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bj1-CE-cbc" secondAttribute="bottom" constant="50" id="GuM-1h-iZD"/>
+                            <constraint firstItem="PYf-ol-hUB" firstAttribute="leading" secondItem="Kxy-dq-eWN" secondAttribute="trailing" constant="8" id="JGi-0i-Lvg"/>
+                            <constraint firstItem="UA8-IQ-IkW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JXh-ci-gjf"/>
+                            <constraint firstItem="UA8-IQ-IkW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K14-hj-Sfl"/>
+                            <constraint firstItem="2be-Bo-q3v" firstAttribute="leading" secondItem="bj1-CE-cbc" secondAttribute="trailing" constant="10" id="KNZ-bl-7rB"/>
+                            <constraint firstItem="bj1-CE-cbc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="KVS-4H-BlA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2be-Bo-q3v" secondAttribute="trailing" id="Kkz-C8-42g"/>
+                            <constraint firstItem="UA8-IQ-IkW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="MF5-P7-J4b"/>
+                            <constraint firstItem="2be-Bo-q3v" firstAttribute="centerY" secondItem="bj1-CE-cbc" secondAttribute="centerY" id="PbZ-iE-WMG"/>
+                            <constraint firstItem="PYf-ol-hUB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="3" id="UH5-yh-rw5"/>
+                            <constraint firstItem="UMa-hW-VDZ" firstAttribute="top" secondItem="UA8-IQ-IkW" secondAttribute="bottom" constant="29.5" id="Vcq-qy-dK6"/>
+                            <constraint firstItem="Kxy-dq-eWN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="eFg-TN-2dl"/>
+                            <constraint firstItem="wCK-m8-rEg" firstAttribute="top" secondItem="UMa-hW-VDZ" secondAttribute="bottom" constant="7.5" id="ydt-JV-Ef9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="bj1-CE-cbc" id="3DP-t4-8jA"/>
+                        <outlet property="burnTimeLabel" destination="UMa-hW-VDZ" id="9ld-wt-Oxc"/>
+                        <outlet property="skinTypeLabel" destination="PYf-ol-hUB" id="nwX-vd-L3z"/>
+                        <outlet property="statusLabel" destination="2be-Bo-q3v" id="Oae-7l-MEb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="103.89805097451276"/>
         </scene>
     </scenes>
 </document>

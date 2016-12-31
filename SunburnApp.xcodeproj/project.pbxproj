@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18253F571E1704D500B2E17E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18253F561E1704D500B2E17E /* Constants.swift */; };
 		188176901E16EEF100CD3E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881768F1E16EEF100CD3E46 /* AppDelegate.swift */; };
 		188176921E16EEF100CD3E46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188176911E16EEF100CD3E46 /* ViewController.swift */; };
 		188176951E16EEF100CD3E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188176931E16EEF100CD3E46 /* Main.storyboard */; };
 		188176981E16EEF100CD3E46 /* SunburnApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188176961E16EEF100CD3E46 /* SunburnApp.xcdatamodeld */; };
 		1881769A1E16EEF100CD3E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188176991E16EEF100CD3E46 /* Assets.xcassets */; };
 		1881769D1E16EEF100CD3E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1881769B1E16EEF100CD3E46 /* LaunchScreen.storyboard */; };
+		188176B01E16F9AA00CD3E46 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188176AF1E16F9AA00CD3E46 /* Utilities.swift */; };
+		D877E715613CE166AD5954C2 /* Pods_SunburnApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EFD11C120EB01E22DCFF19 /* Pods_SunburnApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18253F561E1704D500B2E17E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1881768C1E16EEF100CD3E46 /* SunburnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunburnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1881768F1E16EEF100CD3E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188176911E16EEF100CD3E46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		188176991E16EEF100CD3E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1881769C1E16EEF100CD3E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1881769E1E16EEF100CD3E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188176AF1E16F9AA00CD3E46 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		22379B774B0D8C71BD20F000 /* Pods-SunburnApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunburnApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunburnApp/Pods-SunburnApp.debug.xcconfig"; sourceTree = "<group>"; };
+		391A7A0613CCC0997304A947 /* Pods-SunburnApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunburnApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunburnApp/Pods-SunburnApp.release.xcconfig"; sourceTree = "<group>"; };
+		63EFD11C120EB01E22DCFF19 /* Pods_SunburnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunburnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D877E715613CE166AD5954C2 /* Pods_SunburnApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				1881768E1E16EEF100CD3E46 /* SunburnApp */,
 				1881768D1E16EEF100CD3E46 /* Products */,
+				CB77FB78993A2C163B5AF4FE /* Pods */,
+				71E75675F9E2F594BBAC6ECD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,27 @@
 				1881769B1E16EEF100CD3E46 /* LaunchScreen.storyboard */,
 				1881769E1E16EEF100CD3E46 /* Info.plist */,
 				188176961E16EEF100CD3E46 /* SunburnApp.xcdatamodeld */,
+				188176AF1E16F9AA00CD3E46 /* Utilities.swift */,
+				18253F561E1704D500B2E17E /* Constants.swift */,
 			);
 			path = SunburnApp;
+			sourceTree = "<group>";
+		};
+		71E75675F9E2F594BBAC6ECD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63EFD11C120EB01E22DCFF19 /* Pods_SunburnApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB77FB78993A2C163B5AF4FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22379B774B0D8C71BD20F000 /* Pods-SunburnApp.debug.xcconfig */,
+				391A7A0613CCC0997304A947 /* Pods-SunburnApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 188176A11E16EEF100CD3E46 /* Build configuration list for PBXNativeTarget "SunburnApp" */;
 			buildPhases = (
+				EE41BCB2E4B797576B9BBBB5 /* [CP] Check Pods Manifest.lock */,
 				188176881E16EEF100CD3E46 /* Sources */,
 				188176891E16EEF100CD3E46 /* Frameworks */,
 				1881768A1E16EEF100CD3E46 /* Resources */,
+				13CC4AA54DC6B05175FE3603 /* [CP] Embed Pods Frameworks */,
+				B76C6AA54FC64619801216D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,13 +168,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13CC4AA54DC6B05175FE3603 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunburnApp/Pods-SunburnApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B76C6AA54FC64619801216D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunburnApp/Pods-SunburnApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE41BCB2E4B797576B9BBBB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		188176881E16EEF100CD3E46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18253F571E1704D500B2E17E /* Constants.swift in Sources */,
 				188176921E16EEF100CD3E46 /* ViewController.swift in Sources */,
 				188176981E16EEF100CD3E46 /* SunburnApp.xcdatamodeld in Sources */,
+				188176B01E16F9AA00CD3E46 /* Utilities.swift in Sources */,
 				188176901E16EEF100CD3E46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +346,9 @@
 		};
 		188176A21E16EEF100CD3E46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22379B774B0D8C71BD20F000 /* Pods-SunburnApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRYVND2XX3;
 				INFOPLIST_FILE = SunburnApp/Info.plist;
@@ -276,7 +361,9 @@
 		};
 		188176A31E16EEF100CD3E46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 391A7A0613CCC0997304A947 /* Pods-SunburnApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRYVND2XX3;
 				INFOPLIST_FILE = SunburnApp/Info.plist;
@@ -306,6 +393,7 @@
 				188176A31E16EEF100CD3E46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
